@@ -1,0 +1,956 @@
+﻿Log file open, 08/12/17 19:13:14
+LogInit:Display: Running engine for game: MyProject
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1125944652) SRandInit(-1125944652).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.077547
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: E:/Paragon/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.08.12-10.13.15:317][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.12-10.13.15:317][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.12-10.13.15:326][  0]LogInit: Computer: TYLER-PC
+[2017.08.12-10.13.15:326][  0]LogInit: User: Tyler
+[2017.08.12-10.13.15:326][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.08.12-10.13.15:326][  0]LogInit: High frequency timer resolution =3.417968 MHz
+[2017.08.12-10.13.15:326][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.08.12-10.13.15:326][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.12-10.13.15:326][  0]LogMemory: Process Physical Memory: 273.27 MB used, 273.27 MB peak
+[2017.08.12-10.13.15:326][  0]LogMemory: Process Virtual Memory: 260.79 MB used, 260.79 MB peak
+[2017.08.12-10.13.15:326][  0]LogMemory: Physical Memory: 8648.07 MB used,  7673.40 MB free, 16321.46 MB total
+[2017.08.12-10.13.15:326][  0]LogMemory: Virtual Memory: 638.50 MB used,  7673.40 MB free, 134217728.00 MB total
+[2017.08.12-10.13.15:370][  0]LogInit: Using OS detected language (en-US).
+[2017.08.12-10.13.15:370][  0]LogInit: Using OS detected locale (en-US).
+[2017.08.12-10.13.15:373][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.08.12-10.13.16:227][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.12-10.13.16:251][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 780' (Feature Level 11_0)
+[2017.08.12-10.13.16:251][  0]LogD3D11RHI:       6106/0/8160 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.08.12-10.13.16:253][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.12-10.13.16:253][  0]LogD3D11RHI:       0/0/8160 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.12-10.13.16:253][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.12-10.13.16:259][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.12-10.13.16:259][  0]LogD3D11RHI:     GPU DeviceId: 0x1007 (for the marketing name, search the web for "GPU Device Id")
+[2017.08.12-10.13.16:259][  0]LogWindows: EnumDisplayDevices:
+[2017.08.12-10.13.16:259][  0]LogWindows:    0. 'NVIDIA GeForce GTX 780' (P:1 D:1)
+[2017.08.12-10.13.16:259][  0]LogWindows:    1. 'NVIDIA GeForce GTX 780' (P:0 D:1)
+[2017.08.12-10.13.16:259][  0]LogWindows:    2. 'NVIDIA GeForce GTX 780' (P:0 D:0)
+[2017.08.12-10.13.16:259][  0]LogWindows:    3. 'NVIDIA GeForce GTX 780' (P:0 D:0)
+[2017.08.12-10.13.16:259][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.08.12-10.13.16:259][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 780
+[2017.08.12-10.13.16:259][  0]LogD3D11RHI:   Driver Version: 384.94 (internal:22.21.13.8494, unified:384.94)
+[2017.08.12-10.13.16:259][  0]LogD3D11RHI:      Driver Date: 7-18-2017
+[2017.08.12-10.13.16:259][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.12-10.13.16:277][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.12-10.13.16:286][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.08.12-10.13.16:335][  0]LogShaderCompilers: Guid format shader working directory is 8 characters bigger than the processId version (G:/UE4/BattleBot_Area_Proto/MyProject/Intermediate/Shaders/WorkingDirectory/10460/).
+[2017.08.12-10.13.16:335][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Tyler/AppData/Local/Temp/UnrealShaderWorkingDir/ACB0082846678B83D849D89C0BEDF6FD/'.
+[2017.08.12-10.13.16:335][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.12-10.13.17:180][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.08.12-10.13.17:213][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.08.12-10.13.17:247][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.08.12-10.13.17:283][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.08.12-10.13.17:318][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.08.12-10.13.17:351][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.12-10.13.17:386][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.12-10.13.17:420][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.12-10.13.17:449][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.12-10.13.17:483][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.08.12-10.13.17:516][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.08.12-10.13.17:550][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.08.12-10.13.17:583][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.08.12-10.13.17:617][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.08.12-10.13.17:651][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.08.12-10.13.17:717][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.08.12-10.13.17:717][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.08.12-10.13.17:743][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.08.12-10.13.17:816][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.08.12-10.13.17:835][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.08.12-10.13.17:869][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.08.12-10.13.17:905][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.08.12-10.13.17:939][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.08.12-10.13.17:973][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.08.12-10.13.17:973][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.12-10.13.18:278][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.12-10.13.18:355][  0]LogDerivedDataCache: Loaded boot cache 0.08s 90MB C:/Users/Tyler/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.12-10.13.18:355][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Tyler/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.08.12-10.13.18:355][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file G:/UE4/BattleBot_Area_Proto/MyProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.12-10.13.18:355][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.12-10.13.18:355][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file G:/UE4/BattleBot_Area_Proto/MyProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.12-10.13.18:355][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.12-10.13.18:369][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.12-10.13.18:380][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Tyler/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.12-10.13.18:388][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.08.12-10.13.18:389][  0]LogSlate: Using Freetype 2.6.0
+[2017.08.12-10.13.18:389][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.12-10.13.18:389][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.12-10.13.18:662][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.12-10.13.18:718][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.08.12-10.13.18:843][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.08.12-10.13.18:872][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.08.12-10.13.18:906][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.08.12-10.13.18:906][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.08.12-10.13.18:906][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.12-10.13.19:302][  0]LogNetVersion: MyProject , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 1111101373)
+[2017.08.12-10.13.19:350][  0]LogAssetRegistry: FAssetRegistry took 0.0242 seconds to start up
+[2017.08.12-10.13.19:389][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.026965 seconds
+[2017.08.12-10.13.19:394][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.08.12-10.13.19:394][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.08.12-10.13.19:394][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.12-10.13.19:428][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.08.12-10.13.21:293][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
+[2017.08.12-10.13.21:314][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.08.12-10.13.21:345][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.08.12-10.13.21:727][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.12-10.13.22:008][  0]SourceControl: Info Source control is disabled
+[2017.08.12-10.13.22:042][  0]SourceControl: Info Source control is disabled
+[2017.08.12-10.13.22:080][  0]SourceControl: Info Source control is disabled
+[2017.08.12-10.13.22:114][  0]SourceControl: Info Source control is disabled
+[2017.08.12-10.13.22:591][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.08.12-10.13.23:062][  0]LogEngine: Initializing Engine...
+[2017.08.12-10.13.23:072][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2017.08.12-10.13.23:232][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.08.12-10.13.23:232][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.08.12-10.13.23:317][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.08.12-10.13.23:330][  0]LogInit: XAudio2 using 'Headset Earphone (ASTRO MixAmp Pro           )' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.08.12-10.13.23:339][  0]LogInit: FAudioDevice initialized.
+[2017.08.12-10.13.23:377][  0]LogDerivedDataCache: Saved boot cache 0.04s 90MB C:/Users/Tyler/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.12-10.13.23:389][  0]LogInit: Texture streaming: Enabled
+[2017.08.12-10.13.23:443][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.08.12-10.13.23:590][  0]LogInit: Transaction tracking system initialized
+[2017.08.12-10.13.23:796][  0]BlueprintLog: New page: Editor Load
+[2017.08.12-10.13.24:416][  0]LocalizationService: Info Localization service is disabled
+[2017.08.12-10.13.24:883][  0]LogConsoleResponse:Display: 
+[2017.08.12-10.13.24:986][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.08.12-10.13.24:986][  0]LogCook:Display: Mobile HDR setting 1
+[2017.08.12-10.13.25:691][  0]LogFileCache: Scanning file cache for directory 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/' took 0.01s
+[2017.08.12-10.13.25:691][  0]SourceControl: Info Source control is disabled
+[2017.08.12-10.13.25:691][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.08.12-10.13.25:692][  0]LightingResults: New page: Lighting Build
+[2017.08.12-10.13.25:718][  0]MapCheck: New page: Map Check
+[2017.08.12-10.13.25:718][  0]LightingResults: New page: Lighting Build
+[2017.08.12-10.13.25:873][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2017.08.12-10.13.25:874][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.12-10.13.25:878][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.08.12-10.13.25:890][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.08.12-10.13.25:935][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 44.678ms to complete.
+[2017.08.12-10.13.25:935][  0]LogFileHelpers: Loading map 'Template_Default' took 0.244
+[2017.08.12-10.13.26:014][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.12-10.13.26:015][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.12-10.13.26:119][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.08.12-10.13.26:217][  0]LogCollectionManager: Loaded 0 collections in 0.000788 seconds
+[2017.08.12-10.13.26:281][  0]LogFileCache: Scanning file cache for directory 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/Collections/' took 0.01s
+[2017.08.12-10.13.26:281][  0]LogFileCache: Scanning file cache for directory 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Developers/Tyler/Collections/' took 0.01s
+[2017.08.12-10.13.26:281][  0]LogFileCache: Scanning file cache for directory 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Collections/' took 0.01s
+[2017.08.12-10.13.26:281][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.08.12-10.13.26:289][  0]LogContentBrowser: Native class hierarchy populated in 0.0080 seconds. Added 2344 classes and 499 folders.
+[2017.08.12-10.13.26:329][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.08.12-10.13.26:375][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.08.12-10.13.26:397][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for G:/UE4/BattleBot_Area_Proto/MyProject/Plugins/. Error: The system cannot find the file specified. (0x00000002)
+[2017.08.12-10.13.26:416][  0]LogSlate: Took 0.000201 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.12-10.13.26:418][  0]LogSlate: Took 0.000172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.08.12-10.13.26:422][  0]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.08.12-10.13.26:497][  0]LogRenderer: Reallocating scene render targets to support 1208x924 NumSamples 1 (Frame:1).
+[2017.08.12-10.13.26:686][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.08.12-10.13.26:686][  0]LogLoad: (Engine Initialization) Total time: 12.66 seconds
+[2017.08.12-10.13.26:686][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.06 seconds
+[2017.08.12-10.13.26:686][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.08.12-10.13.26:686][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.08.12-10.13.26:701][  0]LogOcInput: OculusInput pre-init called
+[2017.08.12-10.13.26:701][  0]LogHMD: Starting GearVRController plugin
+[2017.08.12-10.13.26:712][  0]LogAssetRegistry: Asset discovery search completed in 7.3835 seconds
+[2017.08.12-10.13.26:713][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.08.12-10.13.26:713][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000025 seconds (updated 0 objects)
+[2017.08.12-10.13.26:716][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.08.12-10.13.33:722][785]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
+[2017.08.12-10.13.41:725][711]LogEditorActor: Deleted Actor: BP_Sky_Sphere_C
+[2017.08.12-10.13.41:733][711]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.08.12-10.13.47:241][328]LogEditorActor: Deleted Actor: AtmosphericFog
+[2017.08.12-10.13.47:251][328]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.08.12-10.14.07:459][629]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2017.08.12-10.14.08:632][763]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2017.08.12-10.14.11:492][ 81]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2017.08.12-10.14.12:619][209]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.12-10.14.12:632][209]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.12-10.14.12:665][209]PIE: New page: PIE session: Untitled_1 (Aug 13, 2017, 4:14:12 AM)
+[2017.08.12-10.14.12:665][209]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.08.12-10.14.12:666][209]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000852s)
+[2017.08.12-10.14.12:666][209]LogAIModule: Creating AISystem for world Untitled_1
+[2017.08.12-10.14.12:666][209]LogPlayLevel: PIE: World Init took: (0.000485s)
+[2017.08.12-10.14.12:667][209]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.001503s)
+[2017.08.12-10.14.12:683][209]LogInit: XAudio2 using 'Headset Earphone (ASTRO MixAmp Pro           )' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.08.12-10.14.12:688][209]LogInit: FAudioDevice initialized.
+[2017.08.12-10.14.12:732][209]LogLoad: Game class is 'GameModeBase'
+[2017.08.12-10.14.12:803][209]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2017.08.12-19.14.12
+[2017.08.12-10.14.12:803][209]LogWorld: Bringing up level for play took: 0.000871
+[2017.08.12-10.14.12:834][209]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0009 seconds. Added 11 classes and 0 folders.
+[2017.08.12-10.14.12:844][209]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.624
+[2017.08.12-10.14.31:596][358]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (Light Source)
+[2017.08.12-10.15.55:326][935]LogSlate: Took 0.000207 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.12-10.17.22:912][529]LogSlate: Took 0.000202 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.12-10.17.22:945][529]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 G:/Maya_Projects/Sewage/assets/BattleBot_Arena.fbx)
+[2017.08.12-10.17.23:211][529]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.08.12-10.17.23:211][529]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.08.12-10.17.23:211][529]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.08.12-10.17.23:211][529]LogFbx: ItemName: Geometry, ItemCount : 14
+[2017.08.12-10.17.23:211][529]LogFbx: ItemName: Material, ItemCount : 2
+[2017.08.12-10.17.23:211][529]LogFbx: ItemName: Model, ItemCount : 17
+[2017.08.12-10.17.23:211][529]LogFbx: ItemName: NodeAttribute, ItemCount : 3
+[2017.08.12-10.17.23:217][529]LogFbx: Loading FBX Scene from G:/Maya_Projects/Sewage/assets/BattleBot_Arena.fbx
+[2017.08.12-10.17.23:489][529]LogFbx: FBX Scene Loaded Succesfully
+[2017.08.12-10.17.39:318][529]LogFbx: Loading FBX Scene from G:/Maya_Projects/Sewage/assets/BattleBot_Arena.fbx
+[2017.08.12-10.17.39:589][529]LogFbx: FBX Scene Loaded Succesfully
+[2017.08.12-10.17.39:592][529]LogLinker: Can't find file '/Game/Static_Mesh/lambert1'
+[2017.08.12-10.17.39:592][529]LogLinker: Can't find file '/Game/Static_Mesh/lambert1'
+[2017.08.12-10.17.39:597][529]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.08.12-10.17.39:640][529]LogFbx:Warning: Triangulating static mesh Arena_Posts
+[2017.08.12-10.17.40:258][529]LogStaticMesh: Building static mesh BattleBot_Arena_Arena_Posts...
+[2017.08.12-10.17.40:328][529]LogStaticMesh: Built static mesh [0.07s] /Game/Static_Mesh/BattleBot_Arena_Arena_Posts.BattleBot_Arena_Arena_Posts
+[2017.08.12-10.17.40:372][529]LogStaticMesh:Warning: BattleBot_Arena_Arena_Posts has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.40:390][529]LogFbx:Warning: Triangulating static mesh Player_1
+[2017.08.12-10.17.40:499][529]LogStaticMesh: Building static mesh BattleBot_Arena_Player_1...
+[2017.08.12-10.17.40:504][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Player_1.BattleBot_Arena_Player_1
+[2017.08.12-10.17.40:507][529]LogStaticMesh:Warning: BattleBot_Arena_Player_1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.40:515][529]LogFbx:Warning: Triangulating static mesh Player_2
+[2017.08.12-10.17.40:619][529]LogStaticMesh: Building static mesh BattleBot_Arena_Player_2...
+[2017.08.12-10.17.40:624][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Player_2.BattleBot_Arena_Player_2
+[2017.08.12-10.17.40:626][529]LogStaticMesh:Warning: BattleBot_Arena_Player_2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.40:635][529]LogFbx:Warning: Triangulating static mesh Player_3
+[2017.08.12-10.17.40:742][529]LogStaticMesh: Building static mesh BattleBot_Arena_Player_3...
+[2017.08.12-10.17.40:747][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Player_3.BattleBot_Arena_Player_3
+[2017.08.12-10.17.40:749][529]LogStaticMesh:Warning: BattleBot_Arena_Player_3 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.40:757][529]LogFbx:Warning: Triangulating static mesh Player_4
+[2017.08.12-10.17.40:863][529]LogStaticMesh: Building static mesh BattleBot_Arena_Player_4...
+[2017.08.12-10.17.40:869][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Player_4.BattleBot_Arena_Player_4
+[2017.08.12-10.17.40:871][529]LogStaticMesh:Warning: BattleBot_Arena_Player_4 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.40:878][529]LogFbx:Warning: Triangulating static mesh Arena_Floor_Outer
+[2017.08.12-10.17.40:906][529]LogStaticMesh: Building static mesh BattleBot_Arena_Arena_Floor_Outer...
+[2017.08.12-10.17.40:909][529]LogStaticMesh: Built static mesh [0.00s] /Game/Static_Mesh/BattleBot_Arena_Arena_Floor_Outer.BattleBot_Arena_Arena_Floor_Outer
+[2017.08.12-10.17.40:909][529]LogStaticMesh:Warning: BattleBot_Arena_Arena_Floor_Outer has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.40:917][529]LogFbx:Warning: Triangulating static mesh Arena_Floor_Inner
+[2017.08.12-10.17.40:995][529]LogStaticMesh: Building static mesh BattleBot_Arena_Arena_Floor_Inner...
+[2017.08.12-10.17.41:003][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Arena_Floor_Inner.BattleBot_Arena_Arena_Floor_Inner
+[2017.08.12-10.17.41:011][529]LogLinker: Can't find file '/Game/Static_Mesh/phong1'
+[2017.08.12-10.17.41:011][529]LogLinker: Can't find file '/Game/Static_Mesh/phong1'
+[2017.08.12-10.17.41:015][529]LogMaterial: Missing cached shader map for material phong1, compiling. 
+[2017.08.12-10.17.41:029][529]LogFbx:Warning: Triangulating static mesh Arena_Floor_Cage
+[2017.08.12-10.17.41:030][529]LogStaticMesh: Building static mesh BattleBot_Arena_Arena_Floor_Cage...
+[2017.08.12-10.17.41:030][529]LogStaticMesh: Built static mesh [0.00s] /Game/Static_Mesh/BattleBot_Arena_Arena_Floor_Cage.BattleBot_Arena_Arena_Floor_Cage
+[2017.08.12-10.17.41:032][529]LogFbx:Warning: Triangulating static mesh Flame_Thrower
+[2017.08.12-10.17.41:089][529]LogStaticMesh: Building static mesh BattleBot_Arena_Flame_Thrower...
+[2017.08.12-10.17.41:096][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Flame_Thrower.BattleBot_Arena_Flame_Thrower
+[2017.08.12-10.17.41:097][529]LogStaticMesh:Warning: BattleBot_Arena_Flame_Thrower has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.41:104][529]LogFbx:Warning: Triangulating static mesh Flame_Thrower1
+[2017.08.12-10.17.41:163][529]LogStaticMesh: Building static mesh BattleBot_Arena_Flame_Thrower1...
+[2017.08.12-10.17.41:171][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Flame_Thrower1.BattleBot_Arena_Flame_Thrower1
+[2017.08.12-10.17.41:173][529]LogStaticMesh:Warning: BattleBot_Arena_Flame_Thrower1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.41:180][529]LogFbx:Warning: Triangulating static mesh Flame_Thrower2
+[2017.08.12-10.17.41:240][529]LogSlate: Took 0.000227 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.12-10.17.41:250][529]LogStaticMesh: Building static mesh BattleBot_Arena_Flame_Thrower2...
+[2017.08.12-10.17.41:259][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Flame_Thrower2.BattleBot_Arena_Flame_Thrower2
+[2017.08.12-10.17.41:261][529]LogStaticMesh:Warning: BattleBot_Arena_Flame_Thrower2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.41:268][529]LogFbx:Warning: Triangulating static mesh Flame_Thrower3
+[2017.08.12-10.17.41:325][529]LogStaticMesh: Building static mesh BattleBot_Arena_Flame_Thrower3...
+[2017.08.12-10.17.41:332][529]LogStaticMesh: Built static mesh [0.01s] /Game/Static_Mesh/BattleBot_Arena_Flame_Thrower3.BattleBot_Arena_Flame_Thrower3
+[2017.08.12-10.17.41:334][529]LogStaticMesh:Warning: BattleBot_Arena_Flame_Thrower3 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.41:343][529]LogFbx:Warning: Triangulating static mesh Arena_Wall_Static
+[2017.08.12-10.17.41:698][529]LogStaticMesh: Building static mesh BattleBot_Arena_Arena_Wall_Static...
+[2017.08.12-10.17.41:720][529]LogStaticMesh: Built static mesh [0.02s] /Game/Static_Mesh/BattleBot_Arena_Arena_Wall_Static.BattleBot_Arena_Arena_Wall_Static
+[2017.08.12-10.17.41:726][529]LogStaticMesh:Warning: BattleBot_Arena_Arena_Wall_Static has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.41:739][529]LogFbx:Warning: Triangulating static mesh Arena_Wall_Door
+[2017.08.12-10.17.41:938][529]LogStaticMesh: Building static mesh BattleBot_Arena_Arena_Wall_Door...
+[2017.08.12-10.17.41:965][529]LogStaticMesh: Built static mesh [0.03s] /Game/Static_Mesh/BattleBot_Arena_Arena_Wall_Door.BattleBot_Arena_Arena_Wall_Door
+[2017.08.12-10.17.41:968][529]LogStaticMesh:Warning: BattleBot_Arena_Arena_Wall_Door has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Arena_Posts has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Player_1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Player_2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Player_3 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Player_4 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Arena_Floor_Outer has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Flame_Thrower has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Flame_Thrower1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Flame_Thrower2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Flame_Thrower3 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Arena_Wall_Static has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.41:980][529]FBXImport:Warning: Warning BattleBot_Arena_Arena_Wall_Door has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.08.12-10.17.51:421][188]LogActorFactory: Actor Factory created BattleBot_Arena_Player_4
+[2017.08.12-10.17.51:422][188]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Floor_Cage
+[2017.08.12-10.17.51:423][188]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Floor_Inner
+[2017.08.12-10.17.51:423][188]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Floor_Outer
+[2017.08.12-10.17.51:424][188]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Posts
+[2017.08.12-10.17.51:425][188]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Wall_Door
+[2017.08.12-10.17.51:426][188]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Wall_Static
+[2017.08.12-10.17.51:426][188]LogActorFactory: Actor Factory created BattleBot_Arena_Flame_Thrower
+[2017.08.12-10.17.51:427][188]LogActorFactory: Actor Factory created BattleBot_Arena_Flame_Thrower1
+[2017.08.12-10.17.51:428][188]LogActorFactory: Actor Factory created BattleBot_Arena_Flame_Thrower2
+[2017.08.12-10.17.51:428][188]LogActorFactory: Actor Factory created BattleBot_Arena_Flame_Thrower3
+[2017.08.12-10.17.51:429][188]LogActorFactory: Actor Factory created BattleBot_Arena_Player_1
+[2017.08.12-10.17.51:430][188]LogActorFactory: Actor Factory created BattleBot_Arena_Player_2
+[2017.08.12-10.17.51:430][188]LogActorFactory: Actor Factory created BattleBot_Arena_Player_3
+[2017.08.12-10.17.56:577][687]LogActorFactory: Actor Factory created BattleBot_Arena_Player_4
+[2017.08.12-10.17.56:597][687]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Floor_Cage
+[2017.08.12-10.17.56:612][687]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Floor_Inner
+[2017.08.12-10.17.56:628][687]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Floor_Outer
+[2017.08.12-10.17.56:644][687]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Posts
+[2017.08.12-10.17.56:660][687]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Wall_Door
+[2017.08.12-10.17.56:675][687]LogActorFactory: Actor Factory created BattleBot_Arena_Arena_Wall_Static
+[2017.08.12-10.17.56:691][687]LogActorFactory: Actor Factory created BattleBot_Arena_Flame_Thrower
+[2017.08.12-10.17.56:707][687]LogActorFactory: Actor Factory created BattleBot_Arena_Flame_Thrower1
+[2017.08.12-10.17.56:725][687]LogActorFactory: Actor Factory created BattleBot_Arena_Flame_Thrower2
+[2017.08.12-10.17.56:741][687]LogActorFactory: Actor Factory created BattleBot_Arena_Flame_Thrower3
+[2017.08.12-10.17.56:757][687]LogActorFactory: Actor Factory created BattleBot_Arena_Player_1
+[2017.08.12-10.17.56:775][687]LogActorFactory: Actor Factory created BattleBot_Arena_Player_2
+[2017.08.12-10.17.56:792][687]LogActorFactory: Actor Factory created BattleBot_Arena_Player_3
+[2017.08.12-10.18.06:984][667]MapCheck: New page: Map Check
+[2017.08.12-10.18.07:008][667]Cmd: MAP REBUILD ALLVISIBLE
+[2017.08.12-10.18.07:008][667]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.08.12-10.18.07:062][667]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.08.12-10.18.07:069][667]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2017.08.12-10.18.07:074][667]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy lambert1, compiling. 
+[2017.08.12-10.18.07:080][667]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy phong1, compiling. 
+[2017.08.12-10.18.07:469][667]TextureStreamingBuild:Display: Compiling optional shaders took 0.413 seconds.
+[2017.08.12-10.18.07:475][667]LogLevel:Display: Export Material TexCoord Scales took 0.006 seconds.
+[2017.08.12-10.18.07:483][667]TextureStreamingBuild:Display: Build Texture Streaming took 0.007 seconds.
+[2017.08.12-10.18.07:490][667]LightingResults: New page: Lighting Build - Aug 13, 2017, 4:18:07 AM
+[2017.08.12-10.18.07:563][667]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.08.12-10.18.07:713][667]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.08.12-10.18.07:770][667]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.08.12-10.18.08:295][667]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.08.12-10.18.08:295][667]LogSwarmInterface: [TryOpenConnection] Local Process ID is 10460
+[2017.08.12-10.18.11:312][667]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.08.12-10.18.11:312][667]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.08.12-10.18.11:312][667]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.08.12-10.18.11:312][667]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.08.12-10.18.11:312][667]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.08.12-10.18.11:312][667]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.08.12-10.18.11:520][667]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.08.12-10.18.11:520][667]MapCheck: New page: Untitled_1 - Aug 13, 2017, 4:18:11 AM
+[2017.08.12-10.18.11:540][667]MapCheck:Error: Error BattleBot_Arena_Player_15 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.11:540][667]MapCheck:Error: Error BattleBot_Arena_Arena_Floor_Cage_17 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.11:540][667]MapCheck:Error: Error BattleBot_Arena_Arena_Wall_Static_27 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.11:540][667]MapCheck:Error: Error BattleBot_Arena_Player_37 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.11:540][667]MapCheck:Error: Error BattleBot_Arena_Player_39 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.11:540][667]MapCheck:Error: Error BattleBot_Arena_Player_41 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.11:540][667]MapCheck:Error: Error WorldSettings_1 Maps need lighting rebuilt 
+[2017.08.12-10.18.11:587][667]MapCheck: Info Map check complete: 7 Error(s), 0 Warning(s), took 66.333ms to complete.
+[2017.08.12-10.18.11:609][667]LogEditorBuildUtils: Build time 0:04
+[2017.08.12-10.18.11:655][667]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer DefaultMaterial, compiling. 
+[2017.08.12-10.18.11:660][667]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer DefaultMaterial, compiling. 
+[2017.08.12-10.18.11:710][668]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer lambert1, compiling. 
+[2017.08.12-10.18.11:716][668]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer lambert1, compiling. 
+[2017.08.12-10.18.11:768][669]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2017.08.12-10.18.11:780][669]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2017.08.12-10.18.14:072][723]LightingResults:Warning: Warning BattleBot_Arena_Arena_Wall_Door Object has overlapping UVs.
+[2017.08.12-10.18.14:072][723]LightingResults: Info BattleBot_Arena_Arena_Wall_Door Lightmap UV are overlapping by 55.6%. Please adjust content - Enable Error Coloring to visualize.
+[2017.08.12-10.18.14:112][725]LightingResults:Warning: Warning BattleBot_Arena_Arena_Floor_Inner Object has overlapping UVs.
+[2017.08.12-10.18.14:112][725]LightingResults: Info BattleBot_Arena_Arena_Floor_Inner Lightmap UV are overlapping by 1.4%. Please adjust content - Enable Error Coloring to visualize.
+[2017.08.12-10.18.14:112][725]LightingResults:Warning: Warning BattleBot_Arena_Arena_Floor_Outer Object has overlapping UVs.
+[2017.08.12-10.18.14:112][725]LightingResults: Info BattleBot_Arena_Arena_Floor_Outer Lightmap UV are overlapping by 6.8%. Please adjust content - Enable Error Coloring to visualize.
+[2017.08.12-10.18.14:274][737]Job is a success!
+[2017.08.12-10.18.14:357][738]LogMaterial:Warning: Material /Game/Static_Mesh/lambert1.lambert1 needed to have new flag set bUsedWithStaticLighting !
+[2017.08.12-10.18.14:359][738]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.08.12-10.18.14:529][738]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 512X512)
+[2017.08.12-10.18.14:529][738]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 512X512)
+[2017.08.12-10.18.14:529][738]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8, 512X128)
+[2017.08.12-10.18.14:587][738]Lightmass on TYLER-PC: 1.06 sec total, 107 ms importing, 25 ms setup, 270 ms photons, 637 ms processing, 0 ms extra exporting [9/9 mappings]. Threads: 4.30 sec total, 1.12 sec processing.
+[2017.08.12-10.18.14:635][738]LogStaticLightingSystem: Illumination: 7.10 sec (105 ms encoding lightmaps, 26 ms encoding shadowmaps)
+[2017.08.12-10.18.14:635][738]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.08.12-10.18.14:635][738]LogStaticLightingSystem: Shadowmap texture memory: 0.1 MB (0.1 MB streaming, 0.0 MB non-streaming), 1 textures
+[2017.08.12-10.18.19:268][738]DumpUnbuiltLightIteractions
+[2017.08.12-10.18.19:268][738]Lights with unbuilt interactions: 0
+[2017.08.12-10.18.19:268][738]
+[2017.08.12-10.18.19:268][738]Primitives with unbuilt interactions: 0
+[2017.08.12-10.18.19:292][739]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.08.12-10.18.19:292][739]MapCheck: New page: Untitled_1 - Aug 13, 2017, 4:18:19 AM
+[2017.08.12-10.18.19:292][739]MapCheck:Error: Error BattleBot_Arena_Player_15 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.19:292][739]MapCheck:Error: Error BattleBot_Arena_Arena_Floor_Cage_17 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.19:292][739]MapCheck:Error: Error BattleBot_Arena_Arena_Wall_Static_27 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.19:292][739]MapCheck:Error: Error BattleBot_Arena_Player_37 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.19:292][739]MapCheck:Error: Error BattleBot_Arena_Player_39 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.19:292][739]MapCheck:Error: Error BattleBot_Arena_Player_41 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.18.19:340][739]MapCheck: Info Map check complete: 6 Error(s), 0 Warning(s), took 48.069ms to complete.
+[2017.08.12-10.18.29:449][764]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.08.12-10.18.53:785][110]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.08.12-10.18.53:884][110]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.08.12-10.18.53:923][110]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.08.12-10.18.53:988][110]LogSlate: Took 0.041345 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.08.12-10.18.54:167][111]LogSlate: Took 0.016033 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.08.12-10.18.55:158][146]MaterialEditorStats: Info Base pass shader: 80 instructions
+[2017.08.12-10.18.55:158][146]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.08.12-10.18.55:158][146]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.08.12-10.19.04:059][821]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.08.12-10.19.04:074][821]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.08.12-10.19.04:942][857]MaterialEditorStats: Info Base pass shader: 80 instructions
+[2017.08.12-10.19.04:942][857]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.08.12-10.19.04:942][857]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.08.12-10.19.16:533][655]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.12-10.19.16:544][655]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.12-10.19.16:544][655]PIE: New page: PIE session: Untitled_1 (Aug 13, 2017, 4:19:16 AM)
+[2017.08.12-10.19.16:544][655]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.08.12-10.19.16:545][655]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001254s)
+[2017.08.12-10.19.16:545][655]LogAIModule: Creating AISystem for world Untitled_1
+[2017.08.12-10.19.16:546][655]LogPlayLevel: PIE: World Init took: (0.000523s)
+[2017.08.12-10.19.16:546][655]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.001926s)
+[2017.08.12-10.19.16:568][655]LogInit: XAudio2 using 'Headset Earphone (ASTRO MixAmp Pro           )' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.08.12-10.19.16:573][655]LogInit: FAudioDevice initialized.
+[2017.08.12-10.19.16:602][655]LogLoad: Game class is 'GameModeBase'
+[2017.08.12-10.19.16:604][655]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2017.08.12-19.19.16
+[2017.08.12-10.19.16:604][655]LogWorld: Bringing up level for play took: 0.000989
+[2017.08.12-10.19.16:605][655]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.385
+[2017.08.12-10.19.30:995][ 83]LogEditorViewport: Clicking Background
+[2017.08.12-10.19.31:610][152]LogEditorViewport: Clicking Background
+[2017.08.12-10.19.31:658][156]LogEditorViewport: Clicking Background
+[2017.08.12-10.21.52:571][902]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BattleBot_Arena_Player_4)
+[2017.08.12-10.21.52:755][918]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.08.12-10.21.57:668][439]MapCheck: New page: Map Check
+[2017.08.12-10.21.57:697][439]Cmd: MAP REBUILD ALLVISIBLE
+[2017.08.12-10.21.57:697][439]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.08.12-10.21.57:760][439]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.08.12-10.21.57:766][439]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2017.08.12-10.21.57:772][439]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy lambert1, compiling. 
+[2017.08.12-10.21.57:777][439]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy phong1, compiling. 
+[2017.08.12-10.21.58:190][439]TextureStreamingBuild:Display: Compiling optional shaders took 0.434 seconds.
+[2017.08.12-10.21.58:191][439]LogLevel:Display: Export Material TexCoord Scales took 0.002 seconds.
+[2017.08.12-10.21.58:198][439]TextureStreamingBuild:Display: Build Texture Streaming took 0.007 seconds.
+[2017.08.12-10.21.58:205][439]LightingResults: New page: Lighting Build - Aug 13, 2017, 4:21:58 AM
+[2017.08.12-10.21.58:206][439]LogStaticLightingSystem:Warning: WorldSettings.bForceNoPrecomputedLighting is true, Skipping Lighting Build!
+[2017.08.12-10.21.58:220][439]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.08.12-10.21.58:220][439]MapCheck: New page: Untitled_1 - Aug 13, 2017, 4:21:58 AM
+[2017.08.12-10.21.58:220][439]MapCheck:Error: Error BattleBot_Arena_Player_15 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.21.58:220][439]MapCheck:Error: Error BattleBot_Arena_Arena_Floor_Cage_17 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.21.58:220][439]MapCheck:Error: Error BattleBot_Arena_Arena_Wall_Static_27 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.21.58:220][439]MapCheck:Error: Error BattleBot_Arena_Player_37 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.21.58:220][439]MapCheck:Error: Error BattleBot_Arena_Player_39 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.21.58:220][439]MapCheck:Error: Error BattleBot_Arena_Player_41 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.21.58:268][439]MapCheck: Info Map check complete: 6 Error(s), 0 Warning(s), took 48.127ms to complete.
+[2017.08.12-10.21.58:290][439]LogEditorBuildUtils: Build time 0:00
+[2017.08.12-10.22.01:909][822]LogEditorViewport: Clicking on Actor (LMB): LightmassImportanceVolume (LightmassImportanceVolume)
+[2017.08.12-10.22.05:681][230]MapCheck: New page: Map Check
+[2017.08.12-10.22.05:705][230]Cmd: MAP REBUILD ALLVISIBLE
+[2017.08.12-10.22.05:705][230]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.08.12-10.22.05:758][230]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.08.12-10.22.05:764][230]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2017.08.12-10.22.05:770][230]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy lambert1, compiling. 
+[2017.08.12-10.22.05:776][230]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy phong1, compiling. 
+[2017.08.12-10.22.05:968][230]TextureStreamingBuild:Display: Compiling optional shaders took 0.214 seconds.
+[2017.08.12-10.22.05:970][230]LogLevel:Display: Export Material TexCoord Scales took 0.003 seconds.
+[2017.08.12-10.22.05:976][230]TextureStreamingBuild:Display: Build Texture Streaming took 0.006 seconds.
+[2017.08.12-10.22.05:983][230]LightingResults: New page: Lighting Build - Aug 13, 2017, 4:22:05 AM
+[2017.08.12-10.22.05:983][230]LogStaticLightingSystem:Warning: WorldSettings.bForceNoPrecomputedLighting is true, Skipping Lighting Build!
+[2017.08.12-10.22.05:997][230]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.08.12-10.22.05:997][230]MapCheck: New page: Untitled_1 - Aug 13, 2017, 4:22:05 AM
+[2017.08.12-10.22.05:998][230]MapCheck:Error: Error BattleBot_Arena_Player_15 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.22.05:998][230]MapCheck:Error: Error BattleBot_Arena_Arena_Floor_Cage_17 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.22.05:998][230]MapCheck:Error: Error BattleBot_Arena_Arena_Wall_Static_27 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.22.05:998][230]MapCheck:Error: Error BattleBot_Arena_Player_37 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.22.05:998][230]MapCheck:Error: Error BattleBot_Arena_Player_39 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.22.05:998][230]MapCheck:Error: Error BattleBot_Arena_Player_41 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2017.08.12-10.22.06:043][230]MapCheck: Info Map check complete: 6 Error(s), 0 Warning(s), took 45.957ms to complete.
+[2017.08.12-10.22.06:065][230]LogEditorBuildUtils: Build time 0:00
+[2017.08.12-10.22.14:291][116]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BattleBot_Arena_Player_1)
+[2017.08.12-10.22.25:086][760]MapCheck: New page: Map Check
+[2017.08.12-10.22.25:111][760]Cmd: MAP REBUILD ALLVISIBLE
+[2017.08.12-10.22.25:111][760]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.08.12-10.22.25:165][760]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.08.12-10.22.25:171][760]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2017.08.12-10.22.25:348][760]TextureStreamingBuild:Display: Compiling optional shaders took 0.187 seconds.
+[2017.08.12-10.22.25:349][760]LogLevel:Display: Export Material TexCoord Scales took 0.001 seconds.
+[2017.08.12-10.22.25:354][760]TextureStreamingBuild:Display: Build Texture Streaming took 0.004 seconds.
+[2017.08.12-10.22.25:361][760]LightingResults: New page: Lighting Build - Aug 13, 2017, 4:22:25 AM
+[2017.08.12-10.22.25:361][760]LogStaticLightingSystem:Warning: WorldSettings.bForceNoPrecomputedLighting is true, Skipping Lighting Build!
+[2017.08.12-10.22.25:373][760]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.08.12-10.22.25:373][760]MapCheck: New page: Untitled_1 - Aug 13, 2017, 4:22:25 AM
+[2017.08.12-10.22.25:422][760]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 49.417ms to complete.
+[2017.08.12-10.22.25:444][760]LogEditorBuildUtils: Build time 0:00
+[2017.08.12-10.22.33:416][597]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BattleBot_Arena_Arena_Wall_Door)
+[2017.08.12-10.22.38:543][158]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BattleBot_Arena_Arena_Posts)
+[2017.08.12-10.22.44:653][865]Cmd: TRANSACTION UNDO
+[2017.08.12-10.22.44:653][865]LogEditorTransaction: Undo Clicking on Actors
+[2017.08.12-10.22.44:691][865]LogSlate: Took 0.000214 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.12-10.22.45:136][902]Cmd: TRANSACTION UNDO
+[2017.08.12-10.22.45:136][902]LogEditorTransaction: Undo Move Actors
+[2017.08.12-10.22.47:627][175]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.08.12-10.23.07:215][361]Cmd: DELETE
+[2017.08.12-10.23.07:215][361]Cmd: ACTOR DELETE
+[2017.08.12-10.23.07:216][361]LogEditorActor: Deleted Actor: Character
+[2017.08.12-10.23.07:224][361]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.08.12-10.23.14:517][202]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BattleBot_Arena_Arena_Floor_Inner)
+[2017.08.12-10.23.17:054][484]LogEditorViewport: Clicking Background
+[2017.08.12-10.23.27:793][700]LogEditorViewport: Clicking on Actor (LMB): LightmassImportanceVolume (LightmassImportanceVolume)
+[2017.08.12-10.23.37:391][778]Cmd: TRANSACTION UNDO
+[2017.08.12-10.23.37:391][778]LogEditorTransaction: Undo Move Actors
+[2017.08.12-10.23.37:394][778]LogActorComponent: ~FComponentReregisterContext: (/Temp/Untitled_1.Untitled_1:PersistentLevel.BattleBot_Arena_Arena_Wall_Door_25.StaticMeshComponent0) Component already registered.
+[2017.08.12-10.23.37:397][778]LogActorComponent: ~FComponentReregisterContext: (/Temp/Untitled_1.Untitled_1:PersistentLevel.BattleBot_Arena_Player_41.StaticMeshComponent0) Component already registered.
+[2017.08.12-10.23.39:776][  6]Cmd: TRANSACTION UNDO
+[2017.08.12-10.23.39:776][  6]LogEditorTransaction: Undo Move Actors
+[2017.08.12-10.23.39:781][  6]LogActorComponent: ~FComponentReregisterContext: (/Temp/Untitled_1.Untitled_1:PersistentLevel.BattleBot_Arena_Arena_Wall_Door_25.StaticMeshComponent0) Component already registered.
+[2017.08.12-10.23.39:783][  6]LogActorComponent: ~FComponentReregisterContext: (/Temp/Untitled_1.Untitled_1:PersistentLevel.BattleBot_Arena_Player_41.StaticMeshComponent0) Component already registered.
+[2017.08.12-10.23.59:829][195]Cmd: TRANSACTION UNDO
+[2017.08.12-10.23.59:829][195]LogEditorTransaction: Undo Marquee Select
+[2017.08.12-10.24.09:930][159]LogEditorViewport: Clicking Background
+[2017.08.12-10.24.10:554][229]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.08.12-10.24.14:510][671]Cmd: DELETE
+[2017.08.12-10.24.14:510][671]Cmd: ACTOR DELETE
+[2017.08.12-10.24.14:511][671]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.08.12-10.24.14:520][671]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.08.12-10.25.05:508][124]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Proto_Proportions" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.08.12-10.25.05:558][124]LogSavePackage: Save=41.29ms
+[2017.08.12-10.25.05:558][124]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/Proto_Proportions47F0DA0544478EA45A8EFCA997DD3A74.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap'
+[2017.08.12-10.25.05:559][124]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap
+[2017.08.12-10.25.05:581][124]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Proto_Proportions_BuiltData" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset" SILENT=true
+[2017.08.12-10.25.05:586][124]LogSavePackage: Save=3.19ms
+[2017.08.12-10.25.05:586][124]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/Proto_Proportions_BuiltData1A3A8E8245F8B5B49857898A59B6693D.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset'
+[2017.08.12-10.25.05:587][124]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset
+[2017.08.12-10.25.05:597][124]LogFileHelpers: Saving map 'Proto_Proportions' took 0.159
+[2017.08.12-10.25.08:728][492]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Proto_Proportions" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.08.12-10.25.08:786][492]LogSavePackage: Save=29.88ms
+[2017.08.12-10.25.08:786][492]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/Proto_Proportions13B571454F8409BE907D7EB780E1F2F8.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap'
+[2017.08.12-10.25.08:786][492]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap
+[2017.08.12-10.25.08:809][492]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Proto_Proportions_BuiltData" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset" SILENT=true
+[2017.08.12-10.25.08:814][492]LogSavePackage: Save=3.08ms
+[2017.08.12-10.25.08:814][492]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/Proto_Proportions_BuiltData23F149A44B1D9842A95F39B76CE8B55D.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset'
+[2017.08.12-10.25.08:815][492]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset
+[2017.08.12-10.25.19:065][616]MapCheck: New page: Map Check
+[2017.08.12-10.25.19:090][616]Cmd: MAP REBUILD ALLVISIBLE
+[2017.08.12-10.25.19:090][616]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.08.12-10.25.19:143][616]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.08.12-10.25.19:467][616]TextureStreamingBuild:Display: Compiling optional shaders took 0.328 seconds.
+[2017.08.12-10.25.19:469][616]LogLevel:Display: Export Material TexCoord Scales took 0.001 seconds.
+[2017.08.12-10.25.19:473][616]TextureStreamingBuild:Display: Build Texture Streaming took 0.005 seconds.
+[2017.08.12-10.25.19:480][616]LightingResults: New page: Lighting Build - Aug 13, 2017, 4:25:19 AM
+[2017.08.12-10.25.19:487][616]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.08.12-10.25.19:489][616]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.08.12-10.25.19:489][616]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.08.12-10.25.19:491][616]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.08.12-10.25.19:491][616]LogSwarmInterface: [TryOpenConnection] Local Process ID is 10460
+[2017.08.12-10.25.24:026][616]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.08.12-10.25.24:026][616]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.08.12-10.25.24:026][616]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.08.12-10.25.24:026][616]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.08.12-10.25.24:026][616]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.08.12-10.25.24:157][616]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.08.12-10.25.24:157][616]MapCheck: New page: Proto_Proportions - Aug 13, 2017, 4:25:24 AM
+[2017.08.12-10.25.24:157][616]MapCheck:Error: Error WorldSettings_1 Maps need lighting rebuilt 
+[2017.08.12-10.25.24:205][616]MapCheck: Info Map check complete: 1 Error(s), 0 Warning(s), took 48.384ms to complete.
+[2017.08.12-10.25.24:227][616]LogEditorBuildUtils: Build time 0:05
+[2017.08.12-10.25.25:330][679]LightingResults:Warning: Warning BattleBot_Arena_Arena_Wall_Door Object has overlapping UVs.
+[2017.08.12-10.25.25:330][679]LightingResults: Info BattleBot_Arena_Arena_Wall_Door Lightmap UV are overlapping by 55.6%. Please adjust content - Enable Error Coloring to visualize.
+[2017.08.12-10.25.25:351][681]LightingResults:Warning: Warning BattleBot_Arena_Arena_Floor_Outer Object has overlapping UVs.
+[2017.08.12-10.25.25:351][681]LightingResults: Info BattleBot_Arena_Arena_Floor_Outer Lightmap UV are overlapping by 6.8%. Please adjust content - Enable Error Coloring to visualize.
+[2017.08.12-10.25.25:463][690]LightingResults:Warning: Warning BattleBot_Arena_Arena_Floor_Inner Object has overlapping UVs.
+[2017.08.12-10.25.25:463][690]LightingResults: Info BattleBot_Arena_Arena_Floor_Inner Lightmap UV are overlapping by 1.4%. Please adjust content - Enable Error Coloring to visualize.
+[2017.08.12-10.25.25:543][697]Job is a success!
+[2017.08.12-10.25.25:697][699]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 512X512)
+[2017.08.12-10.25.25:697][699]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 512X512)
+[2017.08.12-10.25.25:697][699]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8, 512X64)
+[2017.08.12-10.25.25:717][699]Lightmass on TYLER-PC: 964 ms total, 117 ms importing, 39 ms setup, 271 ms photons, 512 ms processing, 0 ms extra exporting [14/14 mappings]. Threads: 3.42 sec total, 996 ms processing.
+[2017.08.12-10.25.25:745][699]LogStaticLightingSystem: Illumination: 6.22 sec (48 ms encoding lightmaps, 13 ms encoding shadowmaps)
+[2017.08.12-10.25.25:745][699]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.08.12-10.25.25:745][699]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 1 textures
+[2017.08.12-10.25.26:034][699]DumpUnbuiltLightIteractions
+[2017.08.12-10.25.26:034][699]Lights with unbuilt interactions: 0
+[2017.08.12-10.25.26:034][699]
+[2017.08.12-10.25.26:034][699]Primitives with unbuilt interactions: 0
+[2017.08.12-10.25.26:051][700]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.08.12-10.25.26:051][700]MapCheck: New page: Proto_Proportions - Aug 13, 2017, 4:25:26 AM
+[2017.08.12-10.25.26:099][700]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 48.009ms to complete.
+[2017.08.12-10.25.59:184][661]LogEditorViewport: Clicking Background
+[2017.08.12-10.25.59:463][691]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Proto_Proportions" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.08.12-10.25.59:503][691]LogSavePackage: Save=26.61ms
+[2017.08.12-10.25.59:503][691]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/Proto_Proportions845BD2A2430EC40E80B2EFABCCBA2650.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap'
+[2017.08.12-10.25.59:505][691]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions.umap
+[2017.08.12-10.25.59:519][691]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Proto_Proportions_BuiltData" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset" SILENT=true
+[2017.08.12-10.25.59:566][691]LogSavePackage: Save=46.00ms
+[2017.08.12-10.25.59:566][691]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/Proto_Proportions_BuiltDataDE8B951A45283CD84E94EFA43F21AB32.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset'
+[2017.08.12-10.25.59:568][691]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Proto_Proportions_BuiltData.uasset
+[2017.08.12-10.26.03:172][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Arena_Floor_Cage" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Cage.uasset" SILENT=true
+[2017.08.12-10.26.03:198][864]LogSavePackage: Save=25.09ms
+[2017.08.12-10.26.03:198][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Arena_Floor_Cage06E53B9048EA3C3B1E513CA012DDF089.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Cage.uasset'
+[2017.08.12-10.26.03:200][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Cage.uasset
+[2017.08.12-10.26.03:214][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Arena_Floor_Inner" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Inner.uasset" SILENT=true
+[2017.08.12-10.26.03:229][864]LogSavePackage: Save=14.12ms
+[2017.08.12-10.26.03:229][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Arena_Floor_InnerBDEA1E114103E2F75263B78A303A9D7C.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Inner.uasset'
+[2017.08.12-10.26.03:231][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Inner.uasset
+[2017.08.12-10.26.03:245][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Arena_Floor_Outer" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Outer.uasset" SILENT=true
+[2017.08.12-10.26.03:263][864]LogSavePackage: Save=16.47ms
+[2017.08.12-10.26.03:263][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Arena_Floor_Outer13D30ECD449121B605FA98A8081D9A95.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Outer.uasset'
+[2017.08.12-10.26.03:264][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Floor_Outer.uasset
+[2017.08.12-10.26.03:276][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Arena_Posts" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Posts.uasset" SILENT=true
+[2017.08.12-10.26.03:293][864]LogSavePackage: Save=15.22ms
+[2017.08.12-10.26.03:293][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Arena_PostsC76D38694E0353951655B890FEF24A6E.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Posts.uasset'
+[2017.08.12-10.26.03:294][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Posts.uasset
+[2017.08.12-10.26.03:307][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Arena_Wall_Door" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Wall_Door.uasset" SILENT=true
+[2017.08.12-10.26.03:320][864]LogSavePackage: Save=11.28ms
+[2017.08.12-10.26.03:320][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Arena_Wall_Door942266C04F903FA60AA4E79C18A62548.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Wall_Door.uasset'
+[2017.08.12-10.26.03:322][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Wall_Door.uasset
+[2017.08.12-10.26.03:333][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Arena_Wall_Static" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Wall_Static.uasset" SILENT=true
+[2017.08.12-10.26.03:367][864]LogSavePackage: Save=32.37ms
+[2017.08.12-10.26.03:367][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Arena_Wall_Static4A9F7E9140B88A4DCB111E8B41FCA716.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Wall_Static.uasset'
+[2017.08.12-10.26.03:369][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Arena_Wall_Static.uasset
+[2017.08.12-10.26.03:382][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Flame_Thrower" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower.uasset" SILENT=true
+[2017.08.12-10.26.03:395][864]LogSavePackage: Save=11.17ms
+[2017.08.12-10.26.03:395][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Flame_Thrower6B724B1543E178373050A185363F71B5.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower.uasset'
+[2017.08.12-10.26.03:397][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower.uasset
+[2017.08.12-10.26.03:412][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Flame_Thrower1" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower1.uasset" SILENT=true
+[2017.08.12-10.26.03:429][864]LogSavePackage: Save=15.40ms
+[2017.08.12-10.26.03:429][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Flame_Thrower15470187B4FFCBF6B771D65B22299798D.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower1.uasset'
+[2017.08.12-10.26.03:430][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower1.uasset
+[2017.08.12-10.26.03:444][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Flame_Thrower2" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower2.uasset" SILENT=true
+[2017.08.12-10.26.03:462][864]LogSavePackage: Save=16.05ms
+[2017.08.12-10.26.03:462][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Flame_Thrower22203B2DC44D27B8CD42B6DB3B90CCB7A.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower2.uasset'
+[2017.08.12-10.26.03:464][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower2.uasset
+[2017.08.12-10.26.03:478][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Flame_Thrower3" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower3.uasset" SILENT=true
+[2017.08.12-10.26.03:490][864]LogSavePackage: Save=10.96ms
+[2017.08.12-10.26.03:490][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Flame_Thrower3AC8FD66644980BE3ABBF5E94B769BFFB.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower3.uasset'
+[2017.08.12-10.26.03:492][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Flame_Thrower3.uasset
+[2017.08.12-10.26.03:506][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Player_1" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_1.uasset" SILENT=true
+[2017.08.12-10.26.03:518][864]LogSavePackage: Save=11.16ms
+[2017.08.12-10.26.03:518][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Player_1C8C679924CEB5F005BD5938A33B5557F.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_1.uasset'
+[2017.08.12-10.26.03:520][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_1.uasset
+[2017.08.12-10.26.03:532][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Player_2" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_2.uasset" SILENT=true
+[2017.08.12-10.26.03:546][864]LogSavePackage: Save=12.26ms
+[2017.08.12-10.26.03:546][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Player_229C259874D37F7C3982B3998FDA2778C.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_2.uasset'
+[2017.08.12-10.26.03:548][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_2.uasset
+[2017.08.12-10.26.03:561][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Player_3" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_3.uasset" SILENT=true
+[2017.08.12-10.26.03:594][864]LogSavePackage: Save=31.86ms
+[2017.08.12-10.26.03:594][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Player_379DD88A94912F1C09AB82FA2E3D3A6BA.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_3.uasset'
+[2017.08.12-10.26.03:596][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_3.uasset
+[2017.08.12-10.26.03:609][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Static_Mesh/BattleBot_Arena_Player_4" FILE="G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_4.uasset" SILENT=true
+[2017.08.12-10.26.03:621][864]LogSavePackage: Save=10.92ms
+[2017.08.12-10.26.03:621][864]LogSavePackage: Moving 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/BattleBot_Arena_Player_44838577A49B3E137F5D9E9B0D703E4A8.tmp' to 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_4.uasset'
+[2017.08.12-10.26.03:623][864]LogSavePackage:Display: Finished SavePackage G:/UE4/BattleBot_Area_Proto/MyProject/Content/Static_Mesh/BattleBot_Arena_Player_4.uasset
+[2017.08.12-10.26.03:687][864]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.12-10.26.03:688][864]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.12-10.26.03:891][865]Cmd: QUIT_EDITOR
+[2017.08.12-10.26.04:828][865]LogExit: Preparing to exit.
+[2017.08.12-10.26.05:832][865]LogExit: Editor shut down
+[2017.08.12-10.26.05:835][865]LogExit: Transaction tracking system shut down
+[2017.08.12-10.26.05:886][865]LogObj: Freed 0b from 0 cluster array pools.
+[2017.08.12-10.26.05:887][865]LogExit: Object subsystem successfully closed.
+[2017.08.12-10.26.05:903][865]LogD3D11RHI: Shutdown
+[2017.08.12-10.26.05:903][865]LogD3D11RHI: CleanupD3DDevice
+[2017.08.12-10.26.05:963][865]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.08.12-10.26.05:971][865]LogModuleManager: Shutting down and abandoning module MaterialEditor (534)
+[2017.08.12-10.26.05:971][865]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (532)
+[2017.08.12-10.26.05:971][865]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (530)
+[2017.08.12-10.26.05:971][865]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (528)
+[2017.08.12-10.26.05:971][865]LogModuleManager: Shutting down and abandoning module AddContentDialog (526)
+[2017.08.12-10.26.05:972][865]LogDirectoryWatcher: A directory notification for 'E:/Paragon/UE_4.16/FeaturePacks/' was aborted.
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module WidgetCarousel (525)
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module EditorWidgets (522)
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module CollectionManager (520)
+[2017.08.12-10.26.05:972][865]LogDirectoryWatcher: A directory notification for 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Collections/' was aborted.
+[2017.08.12-10.26.05:972][865]LogDirectoryWatcher: A directory notification for 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/Developers/Tyler/Collections/' was aborted.
+[2017.08.12-10.26.05:972][865]LogDirectoryWatcher: A directory notification for 'G:/UE4/BattleBot_Area_Proto/MyProject/Saved/Collections/' was aborted.
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module CrashTracker (518)
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module SceneOutliner (516)
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module StatsViewer (514)
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module FoliageEdit (512)
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module LandscapeEditor (510)
+[2017.08.12-10.26.05:972][865]LogModuleManager: Shutting down and abandoning module MeshPaintMode (508)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (506)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module ActorPickerMode (504)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module GeometryMode (502)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module TextureAlignMode (500)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module BspMode (498)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module HardwareSurvey (496)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (494)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module AutomationWorker (492)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (490)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (488)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module PlacementMode (487)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (484)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (482)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (480)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (478)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (476)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module Media (475)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (472)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module CharacterAI (470)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module AudioCapture (468)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module SequenceRecorder (467)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module SmartSnapping (464)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module SessionServices (462)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module ViewportSnapping (460)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module ViewportInteraction (458)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module ClothPainter (456)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module LogVisualizer (454)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module IntroTutorials (452)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (451)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (448)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (446)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (444)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (442)
+[2017.08.12-10.26.05:973][865]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (441)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (438)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (436)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module InputBindingEditor (434)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module MergeActors (432)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module SizeMap (430)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module TreeMap (428)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module ReferenceViewer (426)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (424)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module LocalizationService (423)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module HardwareTargeting (420)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (418)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module UndoHistory (416)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module UserFeedback (414)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module XmlParser (412)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module Blutility (410)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (408)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (407)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (404)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module SettingsEditor (402)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module ProjectLauncher (400)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module SessionFrontend (398)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module ProfilerClient (396)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module DeviceManager (394)
+[2017.08.12-10.26.06:002][865]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (393)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module AutomationController (390)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module AutomationWindow (388)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module Layers (386)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (384)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module DetailCustomizations (382)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module PackagesDialog (380)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module Persona (378)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (377)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module AnimGraph (375)
+[2017.08.12-10.26.06:065][865]LogModuleManager: Shutting down and abandoning module Kismet (372)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module ClassViewer (370)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module Toolbox (368)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module ModuleUI (366)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module MovieSceneTools (364)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module OutputLog (362)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module GammaUI (360)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module Documentation (358)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (356)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module MovieScene (354)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module Niagara (352)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module NiagaraEditor (351)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (348)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module AnalyticsET (346)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module PortalServices (344)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module PortalRpc (342)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module MessagingRpc (340)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module AIModule (338)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module GameplayDebugger (337)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module AITestSuite (335)
+[2017.08.12-10.26.06:066][865]LogModuleManager: Shutting down and abandoning module ProfilerService (332)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module TaskGraph (330)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module SubstanceEditor (328)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module SteamVR (324)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (322)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (320)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module OculusLibrary (318)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module OculusInput (316)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (314)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (312)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module CableComponent (310)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (302)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module HTML5Networking (300)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module AlembicImporter (298)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module AlembicLibrary (297)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module GeometryCache (296)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (295)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (290)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module SuperSearch (289)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (286)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module PluginBrowser (284)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (282)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (280)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module DesktopPlatform (279)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module UObjectPlugin (276)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (274)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (272)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module GitSourceControl (270)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module SourceControl (269)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (266)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (264)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (262)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module Paper2DEditor (260)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module MeshPaint (259)
+[2017.08.12-10.26.06:314][865]LogModuleManager: Shutting down and abandoning module LevelEditor (257)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (256)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module MainFrame (254)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module HotReload (253)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (248)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module PhysXVehicles (246)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (244)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (242)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (240)
+[2017.08.12-10.26.06:315][865]LogModuleManager: Shutting down and abandoning module UdpMessaging (238)
+[2017.08.12-10.26.06:416][865]LogModuleManager: Shutting down and abandoning module TcpMessaging (236)
+[2017.08.12-10.26.06:681][865]LogModuleManager: Shutting down and abandoning module SubstanceCore (234)
+[2017.08.12-10.26.06:681][865]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.08.12-10.26.06:681][865]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.08.12-10.26.06:681][865]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.08.12-10.26.06:681][865]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.08.12-10.26.06:681][865]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.08.12-10.26.06:681][865]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.08.12-10.26.06:682][865]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.08.12-10.26.06:684][865]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.08.12-10.26.06:684][865]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.08.12-10.26.06:684][865]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.08.12-10.26.06:684][865]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.08.12-10.26.06:684][865]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.08.12-10.26.06:684][865]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.08.12-10.26.06:787][865]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.08.12-10.26.06:787][865]LogDirectoryWatcher: A directory notification for 'G:/UE4/BattleBot_Area_Proto/MyProject/Content/' was aborted.
+[2017.08.12-10.26.06:787][865]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.08.12-10.26.06:787][865]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.08.12-10.26.06:788][865]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.08.12-10.26.06:789][865]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.08.12-10.26.06:789][865]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.08.12-10.26.06:789][865]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.08.12-10.26.06:789][865]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.08.12-10.26.06:789][865]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.08.12-10.26.06:789][865]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.08.12-10.26.06:789][865]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.08.12-10.26.06:789][865]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.08.12-10.26.06:875][865]LogDerivedDataCache: Shutdown
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.08.12-10.26.06:875][865]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.08.12-10.26.06:876][865]LogOnline:Display: Unloading online subsystem: NULL
+[2017.08.12-10.26.06:876][865]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.08.12-10.26.06:876][865]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.08.12-10.26.06:876][865]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.08.12-10.26.06:876][865]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BCD5F98FA-46A7-FDAA-6045-BEA450275996%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=16e32b4e4bec8d74ad7e8cb06f9a4a1c%7Cd8452a0630b34a9ca448d47e49097641%7C030e3067-1df6-4ffc-9c50-df4681af5b04&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.08.12-10.26.06:882][865]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.08.12-10.26.06:883][865]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.08.12-10.26.06:883][865]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.08.12-10.26.06:883][865]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.08.12-10.26.06:883][865]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.08.12-10.26.06:883][865]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.08.12-10.26.06:883][865]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.08.12-10.26.06:883][865]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.08.12-10.26.06:883][865]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.08.12-10.26.06:884][865]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.08.12-10.26.06:885][865]LogExit: Exiting.
+[2017.08.12-10.26.06:894][865]Log file closed, 08/12/17 19:26:06
